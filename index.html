@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220702064913">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220702064913" />
+    <title>Ordering</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__conteiner _conteiner">
+    </div>
+</header>
+    <form method="post" class="order-page">
+        <div class="order-page__body">
+            <div class="order-page__conteiner _conteiner">
+                <div class="order-page__title">
+                    <h1>Оформление заказа</h1>
+                </div>
+                <div class="order-page__items">
+                    <div class="order-page__choice choice">
+                        <div class="choice__delivery delivery">
+                            <div class="delivery__title">
+                                <h2>Доставка</h2>
+                                <div class="delivery__arrow arrow-deliv">
+                                    <div class="arrow-deliv__prev" id="swiperPrev">
+                                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.04634 11L13.2963 19.25L10.9397 21.6066L0.333008 11L10.9397 0.393311L13.2963 2.74998L5.04634 11Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </div>
+                                    <div class="arrow-deliv__next" id="swiperNext">
+                                        <svg width="14" height="22" viewBox="0 0 14 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.04634 11L13.2963 19.25L10.9397 21.6066L0.333008 11L10.9397 0.393311L13.2963 2.74998L5.04634 11Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delivery__swiper swiper-deliv swiper">
+                                <div class="swiper-deliv__wrapper swiper-wrapper">
+                                    <div class="swiper-deliv__slide radiobuttons-item swiper-slide _card-appearance blue-bg-js focus-js">
+                                        <input class="swiper-deliv__input inp-hide input-js inp-focuse-js" type="radio" tabindex="1">
+                                        <div class="swiper-deliv__body">
+                                            <div class="swiper-deliv__item">
+                                                <div class="swiper-deliv__name">Почта России, курьер — 24-26 сент.</div>
+                                                <div class="swiper-deliv__price_hide">+367 ₽</div>
+                                                <div class="swiper-deliv__adres">ул. Академика Королева, 73/3,
+                                                    Петропавловск- Камчатский, 683000</div>
+                                            </div>
+                                            <div class="swiper-deliv__price">+367 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-deliv__slide radiobuttons-item swiper-slide _card-appearance blue-bg-js focus-js">
+                                        <input class="swiper-deliv__input inp-hide input-js inp-focuse-js" type="radio" tabindex="2">
+                                        <div class="swiper-deliv__body">
+                                            <div class="swiper-deliv__item">
+                                                <div class="swiper-deliv__name">Лабиринт, курьер — 25 сент.</div>
+                                                <div class="swiper-deliv__price_hide">+200 ₽</div>
+                                                <div class="swiper-deliv__adres">Можайское шоссе, д. 21, кв. 50, Москва,
+                                                    121471</div>
+                                            </div>
+                                            <div class="swiper-deliv__price">0 ₽</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-deliv__slide radiobuttons-item swiper-slide _card-appearance blue-bg-js focus-js">
+                                        <input class="swiper-deliv__input inp-hide input-js inp-focuse-js" type="radio" tabindex="3">
+                                        <div class="swiper-deliv__body">
+                                            <div class="swiper-deliv__item">
+                                                <div class="swiper-deliv__name">Почта России, курьер — 24-26 сент.</div>
+                                                <div class="swiper-deliv__price_hide">+367 ₽</div>
+                                                <div class="swiper-deliv__adres">ул. Академика Королева, 73/3,
+                                                    Петропавловск- Камчатский, 683000</div>
+                                            </div>
+                                            <div class="swiper-deliv__price">+367 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button tabindex="4" class="swiper-deliv__button _button">
+                                    Выбрать новое место и способ
+                                </button>
+                            </div>
+                        </div>
+                        <div class="choice__date date-choice">
+                            <div class="date-choice__body">
+                                <div class="date-choice__item _card-appearance blue-bg-js-date focus-js">
+                                    <input class="date-choice__input inp-hide input-js-date inp-focuse-js" type="radio" tabindex="5">
+                                    <div class="date-choice__name">пн, 24 сен — ср, 26 сен</div>
+                                    <div class="date-choice__time">10:00–19:00</div>
+                                </div>
+                                <div class="date-choice__item _card-appearance blue-bg-js-date focus-js">
+                                    <input class="date-choice__input inp-hide input-js-date inp-focuse-js" type="radio" tabindex="6">
+                                    <div class="date-choice__name">чт, 27 сен — пт, 28 сен</div>
+                                    <div class="date-choice__time">10:00–19:00</div>
+                                </div>
+                                <button tabindex="7" class="date-choice__button _button">Другие дата и время</button>
+                            </div>
+                            <div class="date-choice__body_hide">
+                                <div class="date-choice__item _card-appearance blue-bg-js-date focus-js">
+                                    <input class="date-choice__input inp-hide input-js-date inp-focuse-js" type="radio" tabindex="5">
+                                    <div class="date-choice__name">вт, 25 сен</div>
+                                    <div class="date-choice__time">10:00–19:00</div>
+                                </div>
+                                <div class="date-choice__item _card-appearance blue-bg-js-date focus-js">
+                                    <input class="date-choice__input inp-hide input-js-date inp-focuse-js" type="radio" tabindex="6">
+                                    <div class="date-choice__name">ср, 26 сен</div>
+                                    <div class="date-choice__time">10:00–19:00</div>
+                                </div>
+                            </div>
+                            <button tabindex="7" class="date-choice__button_hide _button">Другие дата и время</button>
+                        </div>
+                        <div class="choice__notification notification">
+                            <div class="notification__item">
+                                <input type="checkbox" tabindex="8" id="notification-input"
+                                    class="notification__input"></input>
+                                <label for="notification-input" class="notification__label">
+                                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6.68421L8.89474 11.8421L17 3" stroke="white" stroke-width="3"
+                                            stroke-linecap="square" />
+                                    </svg>
+                                </label>
+                                <span>Viber/СМС уведомления о статусе заказа</span>
+                            </div>
+                            <div class="notification__item">
+                                <input type="checkbox" tabindex="9" id="notification-input"
+                                    class="notification__input"></input>
+                                <label for="notification-input" class="notification__label">
+                                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3 6.68421L8.89474 11.8421L17 3" stroke="white" stroke-width="3"
+                                            stroke-linecap="square" />
+                                    </svg>
+                                </label>
+                                <span>Оставить у двери (бесконтактная доставка)</span>
+                            </div>
+                        </div>
+                        <div class="choice__recipient recipient">
+                            <div class="recipient__body">
+                                <div class="recipient__title">
+                                    <h2>Получатель</h2>
+                                </div>
+                                <div class="recipient__item _item-name">
+                                    <div class="recipient__name">Имя и фамилия</div>
+                                    <select tabindex="10" class="recipient__select mw-500" name="select-name" id="select-name">
+                                        <option class="recipient__option" value="1">Константин Константинопольский</option>
+                                        <option class="recipient__option" value="2">Иванов Иван Иванович</option>
+                                        <option class="recipient__option" value="3">Пeтров Петр Петрович</option>
+                                    </select>
+                                    <div class="recipient__arrow">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 9L12 16L5 9" stroke="#858585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                            
+                                    </div>
+                                </div>
+                                <div class="recipient__item fl-bas">
+                                    <div class="recipient__name">Контактный телефон</div>
+                                    <select tabindex="11" class="recipient__select" name="select-number" id="select-number">
+                                        <option class="recipient__option" value="1">+7 910 234-56-78</option>
+                                        <option class="recipient__option" value="2">+7 997 521-78-91</option>
+                                        <option class="recipient__option" value="3">+7 903 606 98 74</option>
+                                    </select>
+                                    <div class="recipient__arrow">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 9L12 16L5 9" stroke="#858585" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                            
+                                    </div>
+                                </div>
+                                <button tabindex="12" class="recipient__button add-recipient">Новый получатель</button>
+                                <button tabindex="13" class="recipient__button add-number">Новый <br> телефон</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="order-page__info info">
+                        <div class="info__title">
+                            <h2>В заказе 4 товара</h2>
+                            <span>(2 кг)</span>
+                        </div>
+                        <div class="info__body">
+                            <div class="info__item">
+                                <div class="info__name">Цена товаров</div>
+                                <div class="info__value">29 456 ₽</div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__name">Все скидки</div>
+                                <div class="info__value">–7 732 ₽</div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__name">Скидка за предоплату</div>
+                                <div class="info__value">–3%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="popup" class="order-popup">
+                    <div class="order-popup__conteiner">
+                        <div class="order-popup__title">
+                            <h2>В заказе 5 товаров</h2>
+                            <span>(2 кг)</span>
+                        </div>
+                        <div class="order-popup__body">
+                            <div class="order-popup__items">
+                                <div class="order-popup__item">Цена товаров</div>
+                                <div class="order-popup__summ">29 456 ₽</div>
+                            </div>
+                            <div class="order-popup__items">
+                                <div class="order-popup__item">Все скидки</div>
+                                <div class="order-popup__summ">–7 732 ₽</div>
+                            </div>
+                            <div class="order-popup__items">
+                                <div class="order-popup__item">К оплате:</div>
+                                <div class="order-popup__summ">21 072 ₽</div>
+                            </div>
+                        </div>
+                        <div class="order-popup__footer">
+                            <a href="#" class="order-popup__button">Закрыть подробности</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-page__bottom bottom">
+            <div class="bottom__conteiner _conteiner">
+                <div class="bottom__items_hide">
+                    <div class="bottom__item_hide">
+                        <div class="bottom__summ_hide">
+                            К оплате:
+                            <span>21 072 ₽</span>
+                        </div>
+                    </div>
+                    <a href="#popup" class="bottom__link">Подробнее</a>
+                </div>
+                <div class="bottom__button-conteiner">
+                    <button class="bottom__button" type="submit">Оформить и оплатить</button>
+                </div>
+                <div class="bottom__items">
+                    <div class="bottom__item">Итого к оплате на сайте:</div>
+                    <div class="bottom__summ">21 072 ₽</div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer class="footer">
+    <div class="footer__conteiner _conteiner">
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220702064913"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220702064913"></script>
+    <script src="js/app.min.js?_v=20220702064913"></script>
+</body>
+
+</html>
